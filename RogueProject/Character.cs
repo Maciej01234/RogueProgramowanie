@@ -1,17 +1,24 @@
 ﻿namespace ClassesIntro;
 
+
+
 public abstract class Character
 {
-    private string avatar = "@";
-    private Vector2 position;
+    protected string avatar = "@";
+    protected Vector2 position;
     
     protected int health = 100;
+    
+    public Vector2 Position
+    {
+        get { return position; }
+    }
     
     public int GetHealth()
     {
         return health;
     }
-
+    
     public void TakeDamage(int damage)
     {
         health -= damage;

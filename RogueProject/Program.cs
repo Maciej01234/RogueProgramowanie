@@ -2,26 +2,32 @@
 // See https://aka.ms/new-console-template for more information
 // string playerAvatar = "@";
 // Console.WriteLine(playerAvatar);
+
+
 Vector2 startingPosition = new Vector2(4, 2);
 Player hero = new Player(startingPosition);
 
+Npc enemy = new Npc(new Vector2(10, 5));
+
 List<Vector2> walls = new List<Vector2>();
 
-walls.Add(new Vector2(6, 2));
+
 walls.Add(new Vector2(7, 2));
 walls.Add(new Vector2(8, 2));
 walls.Add(new Vector2(9, 2));
 walls.Add(new Vector2(10, 2));
 walls.Add(new Vector2(11, 2));
 
-walls.Add(new Vector2(6, 3));
-walls.Add(new Vector2(6, 4));
-walls.Add(new Vector2(6, 5));
-walls.Add(new Vector2(6, 6));
+walls.Add(new Vector2(7, 3));
+walls.Add(new Vector2(7, 4));
+walls.Add(new Vector2(7, 5));
+walls.Add(new Vector2(7, 6));
 
 
 List<Character> heroClones = new List<Character>();
 heroClones.Add(hero);
+heroClones.Add(enemy);
+
 //heroClones.Add(new Npc(startingPosition));
 
 foreach (Character clone in heroClones)
