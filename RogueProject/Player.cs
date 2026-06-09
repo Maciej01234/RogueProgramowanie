@@ -6,7 +6,7 @@ public class Player : Character
     {
     }
 
-    public override void ChooseAction()
+    public override void ChooseAction(List<Vector2> walls)
     {
         ConsoleKeyInfo keyInfo = Console.ReadKey(true);
         ClearAtPosition();
@@ -14,22 +14,22 @@ public class Player : Character
         if (keyInfo.Key == ConsoleKey.A)
         {
             // ruch w lewo
-            Move(-1, 0);
+            Move(-1, 0, walls);
         }
         else if (keyInfo.Key == ConsoleKey.D)
         {
             // ruch w prawo
-            Move(1, 0);
+            Move(1, 0, walls);
         }
         else if (keyInfo.Key == ConsoleKey.W)
         {
             // ruch w górę
-            Move(0, -1);
+            Move(0, -1, walls);
         }
         else if (keyInfo.Key == ConsoleKey.S)
         {
             // ruch w dół
-            Move(0, 1);
+            Move(0, 1, walls);
         }
     }
 }
