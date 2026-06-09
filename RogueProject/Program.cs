@@ -52,6 +52,7 @@ while (true)
         {
             heroClones.RemoveAt(i);
             i--;
+            Environment.Exit(0);
             
         }
     }
