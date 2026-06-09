@@ -4,7 +4,32 @@ public abstract class Character
 {
     private string avatar = "@";
     private Vector2 position;
+    
+    protected int health = 100;
+    
+    public int GetHealth()
+    {
+        return health;
+    }
 
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+
+        if (health <= 0)
+        {
+            health = 0;
+            ClearAtPosition();
+            Console.SetCursorPosition(5, 0);
+            Console.WriteLine("A character has died!");
+        }
+    }
+
+    public bool IsDead()
+    {
+        return health <= 0;
+    }
+    
     public Character(Vector2 startingPosition)
     {
         position = startingPosition;
@@ -14,6 +39,8 @@ public abstract class Character
     {
         Console.SetCursorPosition(position.x, position.y);
         Console.Write(avatar);
+        
+
     }
 
     public void ClearAtPosition()
@@ -26,6 +53,7 @@ public abstract class Character
     {
         Move(diff.x, diff.y, walls);
     }
+    
     public void Move(int diffX, int diffY, List<Vector2> walls)
     {
         Vector2 targetPosition = new Vector2(position.x + diffX, position.y + diffY);
@@ -40,9 +68,13 @@ public abstract class Character
         {
             if (wall.x == targetPosition.x && wall.y == targetPosition.y)
             {
+                TakeDamage(10);
                 return; //blocked by wall
             }
         }
+        if (IsDead())
+            return;
+        
         position =  targetPosition;
     }
 

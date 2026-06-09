@@ -5,11 +5,19 @@ public class Player : Character
     public Player(Vector2 startingPosition) : base(startingPosition)
     {
     }
-
+    
+    public bool IsDead()
+    {
+        return health <= 0;
+    }
+    
     public override void ChooseAction(List<Vector2> walls)
     {
         ConsoleKeyInfo keyInfo = Console.ReadKey(true);
         ClearAtPosition();
+        
+        if(IsDead())
+            return;
     
         if (keyInfo.Key == ConsoleKey.A)
         {

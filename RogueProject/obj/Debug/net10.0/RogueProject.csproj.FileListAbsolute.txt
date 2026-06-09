@@ -1,0 +1,15 @@
+H:\JetBrains apps\RogueProject\RogueProject\bin\Debug\net10.0\RogueProject.exe
+H:\JetBrains apps\RogueProject\RogueProject\bin\Debug\net10.0\RogueProject.deps.json
+H:\JetBrains apps\RogueProject\RogueProject\bin\Debug\net10.0\RogueProject.runtimeconfig.json
+H:\JetBrains apps\RogueProject\RogueProject\bin\Debug\net10.0\RogueProject.dll
+H:\JetBrains apps\RogueProject\RogueProject\bin\Debug\net10.0\RogueProject.pdb
+H:\JetBrains apps\RogueProject\RogueProject\obj\Debug\net10.0\RogueProject.GeneratedMSBuildEditorConfig.editorconfig
+H:\JetBrains apps\RogueProject\RogueProject\obj\Debug\net10.0\RogueProject.AssemblyInfoInputs.cache
+H:\JetBrains apps\RogueProject\RogueProject\obj\Debug\net10.0\RogueProject.AssemblyInfo.cs
+H:\JetBrains apps\RogueProject\RogueProject\obj\Debug\net10.0\RogueProject.csproj.CoreCompileInputs.cache
+H:\JetBrains apps\RogueProject\RogueProject\obj\Debug\net10.0\RogueProject.sourcelink.json
+H:\JetBrains apps\RogueProject\RogueProject\obj\Debug\net10.0\RogueProject.dll
+H:\JetBrains apps\RogueProject\RogueProject\obj\Debug\net10.0\refint\RogueProject.dll
+H:\JetBrains apps\RogueProject\RogueProject\obj\Debug\net10.0\RogueProject.pdb
+H:\JetBrains apps\RogueProject\RogueProject\obj\Debug\net10.0\RogueProject.genruntimeconfig.cache
+H:\JetBrains apps\RogueProject\RogueProject\obj\Debug\net10.0\ref\RogueProject.dll
